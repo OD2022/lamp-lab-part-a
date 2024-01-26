@@ -1,0 +1,157 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin:auto;
+  }
+  header{
+    height:30%;
+    margin-top: 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family:'Trebuchet MS';
+    padding-top: 2em;
+  }
+  #gallery{
+    width: 100%;
+    height: 50%;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("images/pexels-suzy-hazelwood-1995842.jpg");
+    background-size: cover;
+}
+main{
+    margin: 0px;
+    width:100%;
+    margin: auto;
+  }
+  .block1, .block2{
+    width: 80%;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    text-align:center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows : minmax(100px, auto);
+    grid-gap: 1em;
+  }
+  .block1 >div:hover{
+     transform: scale(1.5);
+  }
+  .block1 > div{
+    height: 200px;
+    padding: 1em;
+    background-color:pink;
+    transition:transform.2s;
+  }
+#contactForm{
+    width: 50%;
+    border:1px solid black;
+    margin-bottom: 1em;
+}
+.chip{
+    padding: 0 20px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 1em;
+    width: 30%;
+}
+  #essays{
+    background-image: url("images/Ashesi_University_Logo_6cm.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  #shortStories{
+    background-image: url("images/code.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  #film{
+    background-image: url("images/pexels-pixabay-301943.jpg");
+    background-size: contain;
+    background-position: center;
+  }
+  #biographies{
+    background-image: url("images/laptop.jpg");
+    background-size: contain;
+    background-position: center;
+  }
+  .infoStrip{
+    width:inherit;
+    height: 2em;
+    background-color: black;
+    position: relative;
+    top: 8em;
+    opacity: 40%;
+    font-weight: bolder;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+  }
+  .essayPosts{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 5em;
+    justify-content: space-between;
+  }
+  .essayPosts > div{
+    margin: auto;
+    background-color: palevioletred;
+    width: 15em;
+    height: 20em;
+    color: white;
+    justify-content: space-between;
+    text-align: left;
+
+  }
+  .postImages{
+    height: 40%;
+    background-image: url("images/pexels-fiona-art-5022849.jpg");
+  }
+  footer{
+    background-color: black;
+    color: white;
+    font-size: 10pt;
+    text-align: center;
+  }
+
+.bio-section, .experience-section{
+  margin: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: black;
+  color: white;
+  border-radius: 1em;
+}
+
+.experience-section{
+  padding: 2em;
+}
+
+.experience-section > ul > li > a{
+  text-decoration: none; 
+  color: white;
+}
+
+.experience-section > a :visited{
+  color: white;
+}
+
+.section-skip-button{
+  background-color: black;
+  border-color: white;
+  border: 1px solid gray;
+  border-radius: 1em;
+  width: 15em;
+  height: 3em;
+  color: white;
+  cursor: pointer;
+}
+
