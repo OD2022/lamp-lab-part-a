@@ -2,9 +2,9 @@
 
 session_start();
 // Database connection details
-$host = "localhost"; 
-$username = "phpmyadmin";
-$password = "MAD-44W"; 
+$host = $_ENV['DB_HOST']; 
+$username = $_ENV['DB_USER'];
+$password = $_ENV['DB_PASSWORD'] ;
 $database = "filmhouse_cinema"; 
 
 // Create a connection to the database

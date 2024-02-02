@@ -1,9 +1,9 @@
 <?php
 
 
-$servername = "localhost";
-$username = "phpmyadmin";
-$password = "MAD-44W";
+$host = $_ENV['DB_HOST']; 
+$username = $_ENV['DB_USER'];
+$password = $_ENV['DB_PASSWORD'] ;
 $dbname = "filmhouse_cinema";
 $conn = new mysqli($servername, $username, $password, $dbname);
 

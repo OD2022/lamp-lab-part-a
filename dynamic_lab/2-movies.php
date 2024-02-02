@@ -1,10 +1,10 @@
 <?php
 // (A) DATABASE SETTINGS - CHANGE TO YOUR OWN !
-define("DB_HOST", "localhost");
+define("DB_HOST", $_ENV['DB_HOST']);
 define("DB_NAME", "filmhouse_cinema");
 define("DB_CHARSET", "utf8mb4");
-define("DB_USER", "phpmyadmin");
-define("DB_PASSWORD", "MAD-44W");
+define("DB_USER", $_ENV['DB_USER']);
+define("DB_PASSWORD", $_ENV['DB_PASSWORD']);
 
 // (B) CONNECT TO DATABASE
 $pdo = new PDO(
